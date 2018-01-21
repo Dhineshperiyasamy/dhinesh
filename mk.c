@@ -1,20 +1,24 @@
 #include <stdio.h>
-int main(void) {
-int n,n1,n2,k,r=0;
-scanf("%d%d",&n1,&n2);
-for(n=n1;n<n2;n++)
+int main()
 {
-for(k=2;k>=n/2;k++)
-{
-if(n%k==0)
-{
-r++;
-}
-}
-if(r==0)
-{
-printf("%d",n);
-}
-}
-return 0;
+  int n1, n2, i, temp, num, c;
+  printf("Enter two numbers(intervals): ");
+  scanf("%d %d", &n1, &n2);
+  printf("Armstrong numbers between %d an %d are: ", n1, n2);
+  for(i=n1+1; i<n2; ++i)
+  {
+      temp=i;
+      num=0;
+      while(temp!=0)
+      {
+          r=(temp%10);
+          num+=c*c*c;
+          temp/=10;
+      }
+      if(i==num)
+      {
+          printf("%d ",i);
+      }
+  }
+  return 0;
 }
