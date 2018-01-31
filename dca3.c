@@ -1,9 +1,17 @@
-#include<stdio.h>
+#include <stdio.h>
 #include<string.h>
-void main()
+int main()
 {
-    char a[10]="computer";
-    int b;
-    b=strlen(a);
-    printf("length of the string is %d",b);
+	char b[100]="how are you";
+	 int i,count=0;
+	for(i=0;b[i]!='\0';i++)
+	{
+		if(b[i]==' ')
+			count++;
+	}
+	printf("no. of words are %d",count+1);
+	return 0;
 }
+
+
+
