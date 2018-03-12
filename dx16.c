@@ -5,6 +5,9 @@ int main()
     printf("enter the two number");
     scanf("%d%d",&a,&b);
     c=a+b;
-    printf("%d",c);
+    if(c%2==0)
+        printf("even");
+    else
+        printf("odd");
     return 0;
 }
